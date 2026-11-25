@@ -29,12 +29,33 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    // 0. Theme-aware 88x31 counter (loads only the active theme variant, hides gracefully if blocked)
+    var counterLink = document.querySelector("[data-counter-link]");
+    var counterImg = document.querySelector("[data-counter-img]");
+    function syncCounterTheme() {
+      if (!counterImg) return;
+      var isDark = root.getAttribute("data-theme") === "dark";
+      var nextSrc = isDark
+        ? counterImg.getAttribute("data-dark-src")
+        : counterImg.getAttribute("data-light-src");
+      if (nextSrc && counterImg.getAttribute("src") !== nextSrc) {
+        counterImg.setAttribute("src", nextSrc);
+      }
+    }
+    if (counterImg) {
+      counterImg.addEventListener("error", function () {
+        if (counterLink) counterLink.style.display = "none";
+      });
+      syncCounterTheme();
+    }
+
     // 1. Theme toggle
     var themeBtn = document.querySelector("[data-theme-toggle]");
     if (themeBtn) {
       themeBtn.addEventListener("click", function () {
         var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
         applyTheme(next);
+        syncCounterTheme();
         try {
           localStorage.setItem(STORAGE_KEY, next);
         } catch (_) {}

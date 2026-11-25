@@ -804,6 +804,32 @@ main section:last-of-type {
   gap: 12px;
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.counter-badge {
+  display: inline-flex;
+  line-height: 0;
+  opacity: 0.82;
+  transition: opacity 0.15s ease;
+}
+
+.counter-badge:hover {
+  opacity: 1;
+}
+
+.counter-badge img {
+  display: block;
+  width: 88px;
+  height: 31px;
+  border-radius: 3px;
+  image-rendering: pixelated;
+}
+
 /* Responsive */
 @media (max-width: 860px) {
   .hero-grid {
