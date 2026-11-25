@@ -3,6 +3,14 @@
    Zero third-party fonts or trackers. Privacy-first & Core Web Vitals 100.
    ========================================================================== */
 
+@font-face {
+  font-family: "Firjar";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("firjar-brand.woff2") format("woff2");
+}
+
 :root {
   --bg: #faf9f6;
   --surface: #ffffff;
@@ -130,11 +138,11 @@ button:focus-visible {
 }
 
 .brand {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
+  font-family: "Firjar", var(--font-sans);
+  font-size: 1.32rem;
   font-weight: 600;
   color: var(--text);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
