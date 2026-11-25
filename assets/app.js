@@ -62,9 +62,10 @@
       });
     }
 
-    // 2. Graceful portrait fallback if avatar.jpg is not uploaded yet
+    // 2. Graceful portrait fallback + hover/tap living-portrait easter egg
     var portraitFrame = document.querySelector("[data-portrait-frame]");
     var portraitImg = document.querySelector("[data-portrait-img]");
+    var portraitVideo = document.querySelector("[data-portrait-video]");
     if (portraitFrame && portraitImg) {
       var showFallback = function () {
         portraitFrame.classList.add("is-fallback");
@@ -73,6 +74,63 @@
       if (portraitImg.complete && portraitImg.naturalWidth === 0) {
         showFallback();
       }
+    }
+
+    if (portraitFrame && portraitVideo) {
+      var reducedMotion =
+        window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var isEasterActive = false;
+      var resetTimer = null;
+
+      function triggerPortraitEaster() {
+        if (reducedMotion || isEasterActive || portraitFrame.classList.contains("is-fallback")) {
+          return;
+        }
+        isEasterActive = true;
+        if (resetTimer) {
+          clearTimeout(resetTimer);
+          resetTimer = null;
+        }
+        if (!portraitVideo.getAttribute("src")) {
+          var src = portraitVideo.getAttribute("data-src");
+          if (!src) {
+            isEasterActive = false;
+            return;
+          }
+          portraitVideo.setAttribute("src", src);
+          portraitVideo.load();
+        }
+        try {
+          portraitVideo.currentTime = 0;
+        } catch (_) {}
+
+        var playPromise = portraitVideo.play();
+        if (playPromise && typeof playPromise.then === "function") {
+          playPromise.catch(function () {
+            isEasterActive = false;
+            portraitFrame.classList.remove("is-playing");
+          });
+        }
+      }
+
+      portraitVideo.addEventListener("playing", function () {
+        portraitFrame.classList.add("is-playing");
+      });
+
+      portraitVideo.addEventListener("ended", function () {
+        resetTimer = setTimeout(function () {
+          portraitFrame.classList.remove("is-playing");
+          isEasterActive = false;
+        }, 1800);
+      });
+
+      portraitVideo.addEventListener("error", function () {
+        portraitFrame.classList.remove("is-playing");
+        isEasterActive = false;
+      });
+
+      portraitFrame.addEventListener("mouseenter", triggerPortraitEaster);
+      portraitFrame.addEventListener("click", triggerPortraitEaster);
     }
 
     // 3. Anti-bot email assembly (never stored in plaintext in HTML)
