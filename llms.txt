@@ -1,0 +1,42 @@
+# Dmitry Vorotnikov (Дмитрий Воротников) — mitya.su
+
+> Personal site of Dmitry Vorotnikov — Cross-functional / Delivery Project Manager and Senior Enterprise Customer Success Manager with 9+ years of experience in Tech, B2B SaaS, MarTech, AI integrations, Enterprise e-commerce, EdTech, and FinTech. Based in Moscow (UTC+3), open to remote, hybrid, and international project-based roles.
+
+## Pages
+- [Russian version (Главная, RU)](https://mitya.su/): Full profile, core tracks, selected anonymized Enterprise case studies, career timeline, skills, and contact links in Russian.
+- [English version (EN)](https://mitya.su/en/): Full international profile including global travel-tech partnerships (Emerging Travel Group) and English-language software rollouts.
+
+## Core Positioning
+- **Primary Track:** Cross-functional & Delivery Project Manager (B2B SaaS, MarTech, AI, Enterprise e-commerce, FinTech, EdTech). Scope decomposition, functional specifications, User Story Mapping, Discovery & Delivery (CJM, CustDev, RICE/ICE), A/B experimentation backed by unit economics, risk & SLA control.
+- **Adjacent Strength:** Senior Enterprise Customer Success Manager. Managing portfolios of 10–15 Enterprise accounts, executive QBRs with C-level stakeholders, NRR & retention (98.6% quarterly NRR), churn prevention, renewals, and module expansion.
+
+## Selected Verified Impact (NDA-compliant)
+- **Enterprise Fashion Retail (NDA):** 362M RUB incremental revenue in 3 months (25% Web, 26% App share, 246% ROI); Web-to-App migration campaign with 8,932 installs (25% CR, 1.5-year record); UTM performance pilot (+73% CR, -48% cost-to-revenue ratio).
+- **Federal Omnichannel FMCG Retail (NDA · AI Ecom Awards 2026):** 95M RUB direct revenue in 4 months (>4x YoY mobile app growth, 248% ROI); AI experimentation portfolio (+24.7% revenue per session, +26.4% AOV, +15.3% purchase probability).
+- **Major Pet Retail (NDA · Retail Rocket Group):** 6x turnaround of recommendation revenue to 56.2M RUB in H2 (38.3k orders); 16 automated trigger flows lifting channel conversion to 12.1%.
+- **D2C E-commerce & Retail A/B Discipline (NDA):** 557% ROI within first 46 days (+57% daily revenue growth); unit-economics-driven A/B stop-calls and +18.1% mobile search Add-to-Cart uplift.
+- **B2B SaaS, AI & International Delivery (Dbrain, MAG Development, Emerging Travel Group):** 20-step OCR + Anti-fraud + 4 CRM modules functional spec; 5-module quality claims system spec; English-language 1C Drive rollout for an Australian business unit; global travel-tech partnerships (Travelgate, Juniper, Atriis, GIATA, Vervotech).
+
+## Career Timeline
+- `06.2026 — Present`: Project Manager / Senior Enterprise CSM — B2B Enterprise SaaS Consulting (Project-based)
+- `06.2024 — 06.2026`: Project Manager / Senior CSM — Retail Rocket Group
+- `02.2023 — 08.2024`: Implementation PM / CSM (Part-time from 06.2024) — MAG Development
+- `10.2023 — 01.2024`: Tech Partnerships Success Manager — Emerging Travel Group (international track)
+- `05.2022 — 01.2023`: Project Manager / CSM — Dbrain
+- `02.2021 — 05.2022`: Project Manager (B2B) / CSM — Skyeng (Skypro B2B)
+- `04.2020 — 12.2020`: Project Manager — Independent Tech Consulting (Dynamic Yield, 3D/AR)
+- `10.2018 — 03.2020`: Project Manager / CSM — Popmechanic (acquired by Mindbox)
+- `09.2017 — 10.2018`: FinTech Operations & Support Specialist — Rocketbank
+
+## Tools, Languages & Education
+- **Methods & Tools:** Scrum, Kanban, Discovery & Delivery, CJM, CustDev, A/B Testing, RICE/ICE, User Story Mapping, Jira, Confluence, Yandex Tracker, Asana, amoCRM, Pipedrive.
+- **Languages:** Russian (Native), English (C2), Spanish (B2).
+- **Education & Courses:** RSSU (2016 Language Theory; 2013 Translation Studies), Universidad de Huelva (2013 Filología hispánica), Product development: CJM (SberEducation, 2024), Project Management: Level up (Skyeng, 2022).
+
+## Public Profiles & Contact
+- Website (RU): https://mitya.su/
+- Website (EN): https://mitya.su/en/
+- Telegram: https://t.me/foxymitya
+- LinkedIn: https://www.linkedin.com/in/dmitry-vorotnikov
+- Habr Career: https://career.habr.com/dmitry-vorotnikov
+- Setka: https://set.ki/account/7N4zu4k
